@@ -1,0 +1,110 @@
+{
+  "OrganizationUnits": [
+    {
+      "DN": "OU=APAC,DC=contoso,DC=org",
+      "Code": "APAC"
+    },
+    {
+      "DN": "OU=EMEA,DC=contoso,DC=org",
+      "Code": "EMEA"
+    },
+    {
+      "DN": "OU=AMER,DC=contoso,DC=org",
+      "Code": "AMER"
+    },
+  ],
+  "Groups": [
+      {
+          "UsersSAM": [
+              "-Allow-Users",
+              "-Security-Users",
+              "-Password-Users"
+              ],
+          "GroupsSAM": [
+              "-Allow-Groups",
+              "-Security-Groups"
+          ],
+          "ComputersSAM": [
+            "-Allow-Computers",
+            "-Security-Computers",
+            "-LAPS-Computers"
+          ]
+      }
+  ],
+  "Delegations": [
+      {
+        "UserAllow": [
+              "accountExpires",
+              "company",
+              "cn",
+              "department",
+              "description",
+              "displayName",
+              "givenName",
+              "initials",
+              "ipPhone",
+              "l",
+              "lockoutTime",
+              "manager",
+              "mobile",
+              "msNPAllowDialin",
+              "Name",
+              "name",
+              "postalCode",
+              "sAMAccountName",
+              "sn",
+              "streetAddress",
+              "telephoneNumber",
+              "userAccountControl",
+              "userPrincipalName"
+        ],
+          "UserSecurity": [
+              "servicePrincipalName",
+              "pwdLastSet",
+              "CreateChild",
+              "DeleteChild"
+          ],
+        "UserPassword": [
+              "Change Password",
+              "Reset Password"
+        ],
+          "GroupAllow": [
+              "cn",
+              "Name",
+              "name",
+              "description",
+              "displayName",
+              "groupType",
+              "notes",
+              "mail",
+              "sAMAccountName"
+          ],
+          "GroupSecurity": [
+              "managedBy",
+              "member",
+              "CreateChild",
+              "DeleteChild"
+          ],  
+          "ComputerAllow": [
+              "cn",
+              "Name",
+              "name",
+              "description",
+              "displayName",
+              "managedBy",
+              "memberof",
+              "sAMAccountName",
+              "userAccountControl"
+          ],
+          "ComputerSecurity": [
+            "CreateChild",
+            "DeleteChild",
+            "DeleteTree",
+            "DeleteAllChild"
+        ],
+           "ComputerLaps": [
+              "ms-mcs-AdmPwd"
+           ]
+      }
+  ]
+}

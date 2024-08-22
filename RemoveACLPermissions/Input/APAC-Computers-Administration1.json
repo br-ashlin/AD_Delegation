@@ -1,0 +1,34 @@
+{
+  "OrganizationUnits": [
+    "OU=Computers,OU=APAC,DC=CONTOSO,DC=org"
+  ],
+  "Delegations": [
+    {
+      "UserObjects": [
+
+      ],
+      "GroupObjects": [
+
+      ],
+      "ComputerObjects": [
+
+      ],
+      "AccountObjects": [
+        
+      ],
+      "OUObjects": [
+
+      ],
+      "inetOrgPersonObjects": [
+
+      ],
+      "AllObjects": [
+        "GenericAll"
+      ],
+      "ThisObject": [
+        
+      ]
+    }
+  ] 
+}
+

@@ -1,0 +1,39 @@
+{
+  "OrganizationUnits": [
+    "OU=Servers,OU=EMEA,OU=CONTOSO,DC=org",
+
+  ],
+  "Delegations": [
+    {
+      "UserObjects": [
+        
+      ],
+      "GroupObjects": [
+
+      ],
+      "ComputerObjects": [
+        "CreateChild",
+        "DeleteChild",
+        "ReadProperty",
+        "WriteProperty",
+        "GenericExecute"
+      ],
+      "AccountObjects": [
+        
+      ],
+      "OUObjects": [
+        
+      ],
+      "inetOrgPersonObjects": [
+     
+      ],
+      "AllObjects": [
+        
+      ],
+      "ThisObject": [
+        
+      ]
+    }
+  ] 
+}
+

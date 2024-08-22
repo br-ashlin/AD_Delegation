@@ -1,0 +1,37 @@
+{
+  "OrganizationUnits": [
+    "OU=Desktop,OU=Computers,OU=USA,DC=CONTOSO,DC=org",
+    "OU=Laptop,OU=Computers,OU=USA,DC=CONTOSO,DC=org"
+  ],
+  "Delegations": [
+    {
+      "UserObjects": [
+
+      ],
+      "GroupObjects": [
+
+      ],
+      "ComputerObjects": [
+        "CreateChild",
+        "DeleteChild",
+        "GenericAll"
+      ],
+      "AccountObjects": [
+        
+      ],
+      "OUObjects": [
+
+      ],
+      "inetOrgPersonObjects": [
+
+      ],
+      "AllObjects": [
+        
+      ],
+      "ThisObject": [
+        
+      ]
+    }
+  ] 
+}
+

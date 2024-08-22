@@ -1,0 +1,79 @@
+{ 
+      "OrganizationUnits": [
+            "OU=test,DC=contoso,DC=org"
+      ],
+      "Delegations": [{
+            "UserObjects": [
+                  "accountExpires",
+                  "company",
+                  "cn",
+                  "department",
+                  "description",
+                  "displayName",
+                  "givenName",
+                  "initials",
+                  "ipPhone",
+                  "l",
+                  "lockoutTime",
+                  "manager",
+                  "mobile",
+                  "msNPAllowDialin",
+                  "Name",
+                  "name",
+                  "postalCode",
+                  "sAMAccountName",
+                  "sn",
+                  "streetAddress",
+                  "telephoneNumber",
+                  "userAccountControl",
+                  "userPrincipalName",
+                  "servicePrincipalName",
+                  "pwdLastSet",
+                  "Delete",
+                  "CreateChild",
+                  "DeleteChild",
+                  "DeleteTree",
+                  "DeleteAllChild",
+                  "Change Password",
+                  "Reset Password",
+                  "Mail",
+                  "proxyAddresses"
+            ],
+            "GroupObjects": [
+                  "cn",
+                  "Name",
+                  "name",
+                  "description",
+                  "displayName",
+                  "groupType",
+                  "notes",
+                  "mail",
+                  "sAMAccountName",
+                  "managedBy",
+                  "member",
+                  "Delete",
+                  "CreateChild",
+                  "DeleteChild",
+                  "DeleteTree",
+                  "DeleteAllChild"
+            ],
+            "ComputerObjects": [
+
+            ],
+            "AccountObjects": [
+
+            ],
+            "OUObjects": [
+
+            ],
+            "inetOrgPersonObjects": [
+
+            ],
+            "AllObjects": [
+
+            ],
+            "ThisObject": [
+
+            ]
+      }]
+}
