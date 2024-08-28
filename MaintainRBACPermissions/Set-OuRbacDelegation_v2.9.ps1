@@ -169,7 +169,8 @@ Foreach ($OU in $jsonContent.OrganizationUnits) {
             [DirectoryServices.ActiveDirectorySecurityInheritance]::"All",$([GUID]::Empty)
             )
             
-            Write-Host "[+] Delegating $($property) 'User Objects' to $($PermissionGroup) on $($RegionAdOuDn)" -f gray
+            Write-Host "[+] Delegating $($property) on $($RegionAdOuDn) to $($PermissionGroup) for 'User Objects'" -f gray
+
         
             # Add the rule to the ACL
             $UserACE.AddAccessRule($permissionRule)
@@ -190,7 +191,7 @@ Foreach ($OU in $jsonContent.OrganizationUnits) {
             [DirectoryServices.ActiveDirectorySecurityInheritance]::Descendents,$GuidMap["User"]
             )
             
-                Write-Host "[+] Delegating $($property) 'User Objects' to $($ADGroup) on $($RegionAdOuDn)" -f gray
+            Write-Host "[+] Delegating $($property) on $($RegionAdOuDn) to $($PermissionGroup) for 'User Objects'" -f gray
             
             # Add the rule to the ACL
             $UserACE.AddAccessRule($permissionRule)
@@ -352,7 +353,8 @@ $GroupACE = Get-ACL -Path $RegionAdOuDn
             [DirectoryServices.ActiveDirectorySecurityInheritance]::"All",$([GUID]::Empty)
             )
             
-                Write-Host "[+] Delegating $($property) 'Group Objects' to $($permissionGroup) on $($RegionAdOuDn)" -f gray
+                Write-Host "[+] Delegating $($property) on $($RegionAdOuDn) to $($PermissionGroup) for 'Group Objects'" -f gray
+
             
             # Add the rule to the ACL
             $GroupACE.AddAccessRule($permissionRule)
@@ -373,7 +375,8 @@ $GroupACE = Get-ACL -Path $RegionAdOuDn
             [DirectoryServices.ActiveDirectorySecurityInheritance]::Descendents,$GuidMap["Group"]
             )
             
-                Write-Host "[+] Delegating $($property) 'Group Objects' to $($ADGroup) on $($RegionAdOuDn)" -f gray
+               Write-Host "[+] Delegating $($property) on $($RegionAdOuDn) to $($PermissionGroup) for 'Group Objects'" -f gray
+
             
             # Add the rule to the ACL
             $GroupACE.AddAccessRule($permissionRule)
@@ -512,7 +515,8 @@ Foreach ($OU in $jsonContent.OrganizationUnits) {
             [DirectoryServices.ActiveDirectorySecurityInheritance]::"All",$([GUID]::Empty)
             )
             
-                Write-Host "[+] Delegating $($property) 'Computer Objects' to $($ADGroup) on $($RegionAdOuDn)" -f gray
+                Write-Host "[+] Delegating $($property) on $($RegionAdOuDn) to $($PermissionGroup) for 'Computer Objects'" -f gray
+
             
             # Add the rule to the ACL
             $ComputerACE.AddAccessRule($permissionRule)
@@ -533,7 +537,8 @@ Foreach ($OU in $jsonContent.OrganizationUnits) {
             [DirectoryServices.ActiveDirectorySecurityInheritance]::Descendents,$GuidMap["Computer"]
             )
             
-                Write-Host "[+] Delegating $($property) 'Computer Objects' to $($ADGroup) on $($RegionAdOuDn)" -f gray
+                Write-Host "[+] Delegating $($property) on $($RegionAdOuDn) to $($PermissionGroup) for 'Computer Objects'" -f gray
+
             
             # Add the rule to the ACL
             $ComputerACE.AddAccessRule($permissionRule)
